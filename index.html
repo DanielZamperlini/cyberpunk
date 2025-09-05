@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Zamperlini - Desenvolvedor Fullstack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+
+<body>
+  <!-- Background Effects -->
+  <div class="background-effects">
+    <div class="grid-background"></div>
+    <div class="particles-container"></div>
+    <div class="floating-shapes"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">D<span class="neon-text">ANIEL</span></span>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#about" class="nav-link">SOBRE</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#projects" class="nav-link">PROJETOS</a>
+        <a href="#contact" class="nav-link">CONTATO</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="glitch-text" data-text="ALEXANDRE SILVA">DANIEL ZAMPERLINI</div>
+      <h2 class="hero-subtitle">DESENVOLVEDOR <span class="neon-text">FULLSTACK</span></h2>
+      <p class="hero-description">
+        Analista e Desenvolvedor de Sistemas especializado em criar
+        soluções tecnológicas inovadoras do frontend ao backend
+      </p>
+      <div class="hero-buttons">
+        <button class="cyber-btn primary" onclick="scrollToSection('projects')">
+          <span>VER PROJETOS</span>
+        </button>
+        <button class="cyber-btn secondary" onclick="scrollToSection('contact')">
+          <span>CONTATO</span>
+        </button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-rain"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">SOBRE <span class="neon-text">MIM</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="glass-card">
+            <h3>Desenvolvedor Fullstack</h3>
+            <p>
+              Com formação em <strong>Análise e Desenvolvimento de Sistemas</strong>,
+              sou apaixonado por tecnologia e inovação. Desenvolvo aplicações web e mobile completas, desde a concepção até o deploy.
+            </p>
+            <p>
+              Minha experiência abrange tanto o desenvolvimento frontend quanto
+              backend, com foco em soluções escaláveis e performance otimizada.
+            </p>
+            <div class="education">
+              <h4>🎓 Formação</h4>
+              <p><strong>Análise e Desenvolvimento de Sistemas</strong></p>
+              <p>Faculdade de Ensino Uniasselvi</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Anos Experiência</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projetos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Dedicação</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">HARD <span class="neon-text">SKILLS</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">React/Next.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Vue.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS/SASS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="95"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>DevOps & Cloud</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git/GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CI/CD</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-skill="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-skills">
+        <h3>SOFT <span class="neon-text">SKILLS</span></h3>
+        <div class="soft-skills-grid">
+          <div class="soft-skill">Liderança</div>
+          <div class="soft-skill">Trabalho em Equipe</div>
+          <div class="soft-skill">Comunicação</div>
+          <div class="soft-skill">Resolução de Problemas</div>
+          <div class="soft-skill">Adaptabilidade</div>
+          <div class="soft-skill">Pensamento Crítico</div>
+          <div class="soft-skill">Criatividade</div>
+          <div class="soft-skill">Gestão de Tempo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">MEU <span class="neon-text">TRABALHO</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <button class="project-btn">VER PROJETO</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>Plataforma completa de e-commerce com React, Node.js e PostgreSQL</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <button class="project-btn">VER PROJETO</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Task Management App</h3>
+            <p>Aplicativo de gerenciamento de tarefas com tempo real</p>
+            <div class="project-tech">
+              <span>Vue.js</span>
+              <span>Socket.io</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <button class="project-btn">VER PROJETO</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI Chat Bot</h3>
+            <p>Chatbot inteligente com processamento de linguagem natural</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <button class="project-btn">VER PROJETO</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Crypto Dashboard</h3>
+            <p>Dashboard para análise de criptomoedas em tempo real</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Charts.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">VAMOS <span class="neon-text">CONVERSAR</span></h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="glass-card">
+            <h3>Entre em Contato</h3>
+            <p>Estou sempre aberto para discutir novos projetos e oportunidades.</p>
+
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:alex.dev@email.com">danielzamperlini.developer@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>Telefone</h4>
+                <a href="tel:+5511999999999">+55 (91) 982206-6009</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Localização</h4>
+                <p>Marituba, PA - Brasil</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/DanielZamperlini/" class="social-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/danielzamperlini/" class="social-link">LinkedIn</a>
+              <a href="https://discord.gg/XnJ9V6ev/" class="social-link">Discord</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="glass-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="" required>
+                <label for="name">Nome</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="" required>
+                <label for="email">Email</label>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="" required>
+                <label for="subject">Assunto</label>
+              </div>
+
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="" required></textarea>
+                <label for="message">Mensagem</label>
+              </div>
+
+              <button type="submit" class="cyber-btn primary">
+                <span>ENVIAR MENSAGEM</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 DANIEL ZAMPERLINI. Todos os direitos reservados.</p>
+        <p>Desenvolvido com 💜 e muito café ☕</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/parallax.js"></script>
+</body>
