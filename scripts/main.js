@@ -142,26 +142,6 @@ function setupSkillBars() {
   });
 }
 
-// Contact form
-function setupContactForm() {
-  const form = document.getElementById('contact-form');
-
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      const formData = new FormData(form);
-      const formObject = {};
-
-      formData.forEach((value, key) => {
-        formObject[key] = value;
-      });
-
-      // Simulate form submission
-      showNotification('Mensagem enviada com sucesso!', 'success');
-      form.reset();
-    });
-  }
-}
-
 // Matrix rain effect
 function setupMatrixRain() {
   const codeRain = document.querySelector('.code-rain');

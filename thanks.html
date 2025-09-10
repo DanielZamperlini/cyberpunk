@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Zamperlini - Desenvolvedor Fullstack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="/favicon.svg" type="imagem/svg+xml" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+
+<body>
+  <!-- Background Effects -->
+  <div class="background-effects">
+    <div class="grid-background"></div>
+    <div class="particles-container"></div>
+    <div class="floating-shapes"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">DANIEL <span class="neon-text">ZAMPERLINI</span></span>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">PORTIFÓLIO</a>
+        <a href="#contact" class="nav-link">CONTATO</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2 class="hero-subtitle">DESENVOLVEDOR <span class="neon-text">FULLSTACK</span></h2>
+      <p class="hero-description">
+        Obrigado por entrar em contato, responderei o mais breve possível!
+      </p>
+      <div class="hero-buttons">
+        <button class="cyber-btn secondary" onclick="scrollToSection('contact')">
+          <span>CONTATO</span>
+        </button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-rain"></div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">VAMOS <span class="neon-text">CONVERSAR</span></h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="glass-card">
+            <h3>Entre em Contato</h3>
+            <p>Estou sempre aberto para discutir novos projetos e oportunidades.</p>
+
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:danielzamperlini.developer@gmail.com">danielzamperlini.developer@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>Telefone</h4>
+                <a href="tel:+5591982066009">+55 (91) 98206-6009</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Localização</h4>
+                <p>Marituba, PA - Brasil</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/DanielZamperlini/" class="social-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/danielzamperlini/" class="social-link">LinkedIn</a>
+              <a href="https://discord.gg/XnJ9V6ev/" class="social-link">Discord</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 DANIEL ZAMPERLINI. Todos os direitos reservados.</p>
+        <p>Desenvolvido com 💜 e muito café ☕</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/parallax.js"></script>
+</body>
